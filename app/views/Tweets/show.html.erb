@@ -1,0 +1,17 @@
+<h1>Single Tweet Here</h1>
+
+
+<body>
+
+<% tweets.find(params[:id]) do |tweet| %>
+<table>
+	<tr>
+		<td> <b><%= tweet.content %></b></td>
+		<td><%= tweet.handle %></td>
+	</tr>
+
+<%end%>
+
+</table>
+
+</body>

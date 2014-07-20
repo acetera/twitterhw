@@ -1,0 +1,18 @@
+<h1>Most Recent Tweets</h1>
+
+<body>
+
+<% tweets.each do |tweet| %>
+<table>
+	<tr>
+		<td> <b><%= tweet.content %></b></td>
+		<td><%= tweet.handle %></td>
+		<td><%= link_to "Show", tweet %></td>
+	</tr>
+
+<%end%>
+
+</table>
+
+</body>
+
