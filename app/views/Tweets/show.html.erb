@@ -1,16 +1,10 @@
-<h1>Single Tweet Here</h1>
-
+<h1> Tweet by <%= @tweet.handle %></h1>
 
 <body>
-
-<% tweets.find(params[:id]) do |tweet| %>
 <table>
 	<tr>
-		<td> <b><%= tweet.content %></b></td>
-		<td><%= tweet.handle %></td>
+		<td> <b><%= @tweet.content %></b></td>
 	</tr>
-
-<%end%>
 
 </table>
 
