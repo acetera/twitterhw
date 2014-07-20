@@ -4,3 +4,20 @@
 <%= link_to "Check out Tweets Here", tweets_path%>
 </div></h2>
 
+
+<body>
+
+<% tweets.each do |tweet| %>
+<table>
+	<tr>
+		<td> <b><%= tweet.content %></b></td>
+		<td><%= tweet.handle %></td>
+		<td><%= link_to "Show", tweet %></td>
+	</tr>
+
+<%end%>
+
+</table>
+
+</body>
+
